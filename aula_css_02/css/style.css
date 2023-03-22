@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid #32B9CD;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* ^ Margem igual nos 2 LADOS */
+}
+
+/* Apenas o conteiner dentro do header*/
+.header .container {
+    justify-content: space-between;
+}
+
+.titulo {
+    color: #32B9CD;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.navbar li, .navbar a {
+    color: #E3B062;
+    text-decoration: none;
+}
+
+/* BANNER */
+
+.banner {
+    background-image: url('../assets/img/bg-jelly-fish-para_outras_pags.png ');
+    background-size: cover;
+    /* ^ Ocupa todo o tamanho da tela */
+}
+
+.banner .container {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner p {
+    width: 280px;
+    font-size: 36px;
+    /* font-size: 2.2rem; */
+    /* 1rem = 16px */
+    color: white;
+    margin-right: 120px;
+}
+
+.banner span {
+    font-weight: 800;
+}
+
+/* MISSÃO, VISÃO E VALORES */
+
+.social {
+    background-color: #E5E5E5;
+}
+
+.boxes {
+    display: flex;
+    padding: 50px 0;
+    /* Ordem começa por cima, e segue no sentido horário*/
+    gap: 8px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    width: 170px;
+}
